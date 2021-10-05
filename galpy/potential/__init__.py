@@ -1,4 +1,3 @@
-from . import mwpotentials
 import warnings
 from . import Force
 from . import Potential
@@ -201,5 +200,6 @@ PowerTriaxialPotential = PowerTriaxialPotential.PowerTriaxialPotential
 
 # MW potential models, now in galpy.potential.mwpotentials, but keep these two
 # for tests, backwards compatibility, and convenience
+from . import mwpotentials
 MWPotential = mwpotentials._MWPotential
 MWPotential2014 = mwpotentials.MWPotential2014
