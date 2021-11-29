@@ -6,6 +6,7 @@ from . import linearPotential
 from . import verticalPotential
 from . import MiyamotoNagaiPotential
 from . import MiyamotoNagaiPotential2
+from . import MiyamotoNagaiPotential3
 from . import IsochronePotential
 from . import LogarithmicHaloPotential
 from . import DoubleExponentialDiskPotential
@@ -136,6 +137,7 @@ planarPotential = planarPotential.planarPotential
 linearPotential = linearPotential.linearPotential
 MiyamotoNagaiPotential = MiyamotoNagaiPotential.MiyamotoNagaiPotential
 MiyamotoNagaiPotential2 = MiyamotoNagaiPotential2.MiyamotoNagaiPotential2
+MiyamotoNagaiPotential3 = MiyamotoNagaiPotential3.MiyamotoNagaiPotential3
 IsochronePotential = IsochronePotential.IsochronePotential
 DoubleExponentialDiskPotential = DoubleExponentialDiskPotential.DoubleExponentialDiskPotential
 LogarithmicHaloPotential = LogarithmicHaloPotential.LogarithmicHaloPotential
