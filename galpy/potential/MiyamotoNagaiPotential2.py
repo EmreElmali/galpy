@@ -30,5 +30,5 @@ class MiyamotoNagaiPotential2(Potential):
 
     def _dens(self, R, z, phi=0., t=0.):
         sqrtbz = numpy.sqrt(self._b2+z**2.)
-        return (self._b2/(4*numpy.pi)) * ((3*(self._a+sqrtbz))/(sqrtbz**3*(R**2 + (self._a + sqrtbz)**2)**3.5)) \
-            * (R**2*(sqrtbz**2 - self._a*sqrtbz + self._a**2) + (self._a + sqrtbz)**2 * (sqrtbz**2 + 4*self._a*sqrtbz + self._a**2))
+        return ((self._b2)/(4*numpy.pi)) * (3*(self._a + sqrtbz))/(sqrtbz**3 * (R**2 + (self._a + sqrtbz)**2)**3.5) \
+            * (R**2 * (sqrtbz**2 - self._a*sqrtbz + self._a**2) + (self._a + sqrtbz)**2 * (sqrtbz**2 + 4*self._a*sqrtbz + self._a**2))
