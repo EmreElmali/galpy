@@ -24,9 +24,9 @@ class MiyamotoNagaiPotential2(Potential):
         self.hasC_dens = False
 
     def _evaluate(self, R, z, phi=0., t=0.):
-        return (-1./numpy.sqrt(R**2.+(self._a+numpy.sqrt(z**2.+self._b2))**2.)) * \
-            (1 + (self._a * (self._a + numpy.sqrt(z**2.+self._b2)) /
-             R**2 + (self._a + numpy.sqrt(z**2.+self._b2))**2))
+        sqrtbz = numpy.sqrt(self._b2+z**2.)
+        return (-1.)/((R**2 + (self._a + sqrtbz)**2)**0.5) \
+            * (1. + (self._a * (self._a + sqrtbz))/(R**2 + (self._a + sqrtbz)**2))
 
     def _dens(self, R, z, phi=0., t=0.):
         sqrtbz = numpy.sqrt(self._b2+z**2.)
